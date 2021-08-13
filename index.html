@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding:0;
+		}
+		body{
+			display: flex;
+			justify-content: center;
+			align-self: center;
+			min-height: 100vh;
+			background: #222;
+		}
+		.container{
+			position: relative;
+			max-width: 100%;
+			display: grid;/**/
+			grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+			grid-template-rows:minmax(100px,auto);
+			margin: 40px;
+			grid-auto-flow: dense;/**/
+			grid-gap: 13px;
+			background: #000;
+			place-items:center;
+			padding: 25px;
+		}
+		.container .box
+		{
+            height: 220px;
+			position: relative;
+			background:#333;
+			color: white;
+			padding: 20px;
+			display:grid;
+			font-size: 18px; 
+            place-items:center;/*padding son grandir d'element pere*/
+            text-align: center;
+            transition: 0.5s;
+		}
+		.container .box:hover{
+			background: #e91e63;
+		}
+		
+		.container .box img{
+			height:155px;
+			width: 165px;
+			margin-bottom: 15px;
+			position: relative;
+		}
+		.container .box:nth-child(1){
+			grid-column: span 2;
+		}
+		.container .box:nth-child(2){
+			grid-column: span 1;
+			grid-row:span 2;
+			height: 93%;
+			width: 90%;
+			padding: 300px auto;
+		}
+		.container .box:nth-child(2) img{
+		    position: relative;
+		    top:22%;
+
+		}
+	.container .box:nth-child(2) p{
+			position: relative;
+			top: -55px;
+			z-index: 2;
+		}
+	.container .box:nth-child(4){
+			grid-column: span 1;
+			grid-row:span 2;
+			height: 93%;
+			padding: 300px auto;
+		}
+		.container .box:nth-child(4) img{
+		    position: relative;
+		    top:22%;
+
+		}
+		.container .box:nth-child(4) p{
+			position: relative;
+			top: -55px;
+			z-index: 2;
+		}
+     .container .box:nth-child(7){
+       	grid-column:span 2;
+       	width: 94.5%;
+       } 
+	</style>
+</head>
+<body>
+   <div class="container">
+   	 <div class="box">
+   	 	<img src="4.jpg">
+   	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	 	tempor incididunt </p>
+   	 </div>
+   	  <div class="box">
+   	 	<img src="4.jpg">
+   	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	 	tempor incididunt ut labore et dolore  </p>
+   	 </div>
+   	  <div class="box">
+   	 	<img src="4.jpg">
+   	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	 	tempor incididunt.</p>
+   	 </div>
+   	   	 <div class="box">
+   	 	<img src="4.jpg">
+   	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	 	tempor incididunt </p>
+   	 </div>
+   	   	 <div class="box">
+   	 	<img src="4.jpg">
+   	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	 	tempor incididunt </p>
+   	 </div>
+   	    	 <div class="box">
+   	 	<img src="4.jpg">
+   	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	 	tempor incididunt </p>
+   	 </div>
+   	    	 <div class="box">
+   	 	<img src="4.jpg">
+   	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	 	tempor incididunt </p>
+   	 </div>
+   	       <div class="box">
+   	 	<img src="4.jpg">
+   	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	 	tempor incididunt </p>
+   	 </div>
+   </div>
+</body>
+</html>
